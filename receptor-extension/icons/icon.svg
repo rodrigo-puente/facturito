@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="dome" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f4f6fb"/>
+      <stop offset="1" stop-color="#c9d2e4"/>
+    </linearGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#dde3ef"/>
+    </linearGradient>
+  </defs>
+
+  <!-- patas -->
+  <g>
+    <rect x="6"  y="52" width="22" height="62" rx="8" fill="url(#body)" stroke="#9aa7c4" stroke-width="2"/>
+    <rect x="100" y="52" width="22" height="62" rx="8" fill="url(#body)" stroke="#9aa7c4" stroke-width="2"/>
+    <rect x="4"  y="106" width="28" height="14" rx="5" fill="#1b44c8"/>
+    <rect x="96" y="106" width="28" height="14" rx="5" fill="#1b44c8"/>
+    <rect x="10" y="62" width="14" height="18" rx="3" fill="#1b44c8" opacity="0.85"/>
+    <rect x="104" y="62" width="14" height="18" rx="3" fill="#1b44c8" opacity="0.85"/>
+  </g>
+
+  <!-- cuerpo -->
+  <rect x="30" y="46" width="68" height="74" rx="12" fill="url(#body)" stroke="#9aa7c4" stroke-width="2"/>
+  <!-- detalles del cuerpo -->
+  <rect x="40" y="76" width="20" height="12" rx="3" fill="#1b44c8"/>
+  <rect x="66" y="76" width="22" height="12" rx="3" fill="#94a3c8"/>
+  <rect x="40" y="94" width="48" height="7" rx="3.5" fill="#94a3c8"/>
+  <rect x="40" y="105" width="34" height="7" rx="3.5" fill="#1b44c8" opacity="0.8"/>
+  <circle cx="48" cy="62" r="6" fill="#1b44c8"/>
+  <circle cx="80" cy="62" r="6" fill="#e2e8f4" stroke="#9aa7c4" stroke-width="2"/>
+
+  <!-- domo -->
+  <path d="M30 50 a34 34 0 0 1 68 0 z" fill="url(#dome)" stroke="#9aa7c4" stroke-width="2"/>
+  <!-- paneles azules del domo -->
+  <path d="M36 34 a30 30 0 0 1 12 -12 l6 10 a18 18 0 0 0 -8 8 z" fill="#1b44c8"/>
+  <path d="M92 34 a30 30 0 0 0 -12 -12 l-6 10 a18 18 0 0 1 8 8 z" fill="#1b44c8"/>
+  <rect x="34" y="42" width="60" height="5" rx="2.5" fill="#1b44c8" opacity="0.7"/>
+  <!-- ojo -->
+  <circle cx="64" cy="30" r="10" fill="#16233b"/>
+  <circle cx="64" cy="30" r="6" fill="#1b44c8"/>
+  <circle cx="61.5" cy="27.5" r="2.2" fill="#ffffff" opacity="0.9"/>
+</svg>

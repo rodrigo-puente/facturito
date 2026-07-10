@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Facturito</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <header>
+    <div>
+      <div class="eyebrow">Receptores · DTE</div>
+      <h1><img src="icons/icon32.png" alt="" class="logo" /> Facturito</h1>
+    </div>
+    <div class="header-actions">
+      <button id="btnCapture" class="primary" title="Guarda lo que está escrito ahora en la sección Receptor del formulario">⬇ Capturar</button>
+    </div>
+  </header>
+
+  <div id="status" class="status hidden"></div>
+
+  <ul id="list"></ul>
+  <p id="empty" class="empty hidden">
+    No hay receptores guardados.<br />
+    Llena la sección Receptor en el formulario una vez y usa
+    <strong>⬇ Capturar</strong>.
+  </p>
+
+  <footer>
+    <button id="btnExport" class="link">Exportar</button>
+    <span class="dot">·</span>
+    <button id="btnImport" class="link">Importar</button>
+    <input type="file" id="fileImport" accept=".json" hidden />
+  </footer>
+
+  <!-- Formulario de edición -->
+  <div id="editor" class="editor hidden">
+    <div class="eyebrow" id="editorEyebrow">Nuevo receptor</div>
+    <h2 id="editorTitle">Datos del receptor</h2>
+    <form id="form">
+      <label class="full">Alias <span class="hint">— nombre para la lista</span>
+        <input name="alias" required maxlength="60" placeholder="Ej. Cliente ACME" />
+      </label>
+
+      <div class="row">
+        <label>Tipo de documento
+          <select name="tipoDocumento">
+            <option value=""></option>
+            <option value="36">NIT</option>
+            <option value="13">DUI</option>
+            <option value="03">Pasaporte</option>
+            <option value="02">Carnet residente</option>
+            <option value="37">Otro</option>
+          </select>
+        </label>
+        <label>Número de documento
+          <input name="nit" class="mono" maxlength="20" placeholder="06141234567890" />
+        </label>
+        <label>NRC <span class="hint">— solo números</span>
+          <input name="nrc" class="mono" maxlength="7" placeholder="1234567" />
+        </label>
+      </div>
+
+      <label class="full">Nombre del cliente
+        <input name="nombre" maxlength="250" />
+      </label>
+
+      <label class="full">Nombre comercial
+        <input name="nombreComercial" maxlength="150" />
+      </label>
+
+      <label class="full">Actividad económica <span class="hint">— texto tal como aparece en la lista del sitio</span>
+        <input name="actividad" maxlength="150" />
+      </label>
+
+      <label class="full">Actividad económica (texto libre) <span class="hint">— Exportación y Sujeto Excluido</span>
+        <input name="descActividad" maxlength="150" />
+      </label>
+
+      <div class="row">
+        <label>Tipo de persona <span class="hint">— Exportación</span>
+          <select name="tipoPersona">
+            <option value=""></option>
+            <option value="01">Natural</option>
+            <option value="02">Jurídica</option>
+          </select>
+        </label>
+        <label>País <span class="hint">— Exportación</span>
+          <input name="pais" maxlength="100" placeholder="GUATEMALA" />
+        </label>
+      </div>
+
+      <fieldset class="location">
+        <legend>Ubicación <span class="hint">— código y nombre; se llenan solos al capturar</span></legend>
+        <div class="loc-row">
+          <span class="loc-label">Departamento</span>
+          <input name="departamento" class="mono code" maxlength="2" placeholder="06" />
+          <input name="departamentoLabel" placeholder="SAN SALVADOR" />
+        </div>
+        <div class="loc-row">
+          <span class="loc-label">Municipio</span>
+          <input name="municipio" class="mono code" maxlength="2" placeholder="23" />
+          <input name="municipioLabel" placeholder="SAN SALVADOR CENTRO" />
+        </div>
+        <div class="loc-row">
+          <span class="loc-label">Distrito</span>
+          <input name="distrito" class="mono code" maxlength="2" placeholder="14" />
+          <input name="distritoLabel" placeholder="SAN SALVADOR" />
+        </div>
+      </fieldset>
+
+      <label class="full">Dirección (complemento)
+        <textarea name="complemento" rows="2" maxlength="200"></textarea>
+      </label>
+
+      <div class="row">
+        <label>Correo electrónico
+          <input name="correo" type="email" maxlength="100" />
+        </label>
+        <label>Teléfono <span class="hint">— solo números</span>
+          <input name="telefono" class="mono" maxlength="8" placeholder="22334455" />
+        </label>
+      </div>
+
+      <div class="editor-actions">
+        <button type="button" id="btnCancel">Cancelar</button>
+        <button type="submit" class="primary">Guardar receptor</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
