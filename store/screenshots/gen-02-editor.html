@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!-- Generador de la captura 02-editor.png (1280x800) para la Chrome Web Store.
+     Renderizar con:
+       chrome --headless --window-size=1280,800 --screenshot=02-editor.png gen-02-editor.html -->
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="../../receptor-extension/popup.css" />
+  <style>
+    html, body { width: 1280px; height: 800px; overflow: hidden; }
+    body {
+      display: flex; align-items: center; justify-content: center; gap: 80px;
+      background: linear-gradient(135deg, #e9eefb 0%, #fafaf7 55%, #f7f6ef 100%);
+    }
+    .pitch { width: 340px; }
+    .pitch img { width: 96px; height: 96px; margin-bottom: 28px; }
+    .pitch h1 { font-size: 40px; letter-spacing: -0.02em; margin-bottom: 14px; }
+    .pitch p { font-size: 17px; line-height: 1.55; color: #3c4557; }
+    .popup {
+      width: 540px; position: relative;
+      background: var(--paper); border-radius: 14px; overflow: hidden;
+      box-shadow: 0 24px 60px rgba(22, 35, 59, 0.18);
+    }
+    /* el editor es position:fixed dentro del popup real; aquí vive en la tarjeta */
+    .popup .editor { position: static; }
+  </style>
+</head>
+<body>
+  <div class="pitch">
+    <img src="../../receptor-extension/icons/icon128.png" alt="" />
+    <h1>Facturito</h1>
+    <p>Guarda tus receptores localmente y llena los formularios de DTE de factura.gob.sv con un clic.</p>
+  </div>
+
+  <div class="popup">
+    <div class="editor">
+      <div class="eyebrow">Nuevo receptor</div>
+      <h2>Datos del receptor</h2>
+      <form>
+        <label class="full">Alias <span class="hint">— nombre para la lista</span>
+          <input value="ACME S.A. de C.V." style="border-color: var(--cobalt); box-shadow: 0 0 0 3px var(--cobalt-soft);" />
+        </label>
+
+        <div class="row">
+          <label>Tipo de documento
+            <select><option>NIT</option></select>
+          </label>
+          <label>Número de documento
+            <input class="mono" value="06140000000000" />
+          </label>
+          <label>NRC <span class="hint">— solo números</span>
+            <input class="mono" value="1234567" />
+          </label>
+        </div>
+
+        <label class="full">Nombre del cliente
+          <input value="ACME S.A. de C.V." />
+        </label>
+
+        <label class="full">Nombre comercial
+          <input value="" />
+        </label>
+
+        <label class="full">Actividad económica <span class="hint">— texto tal como aparece en la lista del sitio</span>
+          <input value="" />
+        </label>
+
+        <label class="full">Actividad económica (texto libre) <span class="hint">— Exportación y Sujeto Excluido</span>
+          <input value="Servicios informáticos" />
+        </label>
+
+        <div class="row">
+          <label>Tipo de persona <span class="hint">— Exportación</span>
+            <select><option>Jurídica</option></select>
+          </label>
+          <label>País <span class="hint">— Exportación</span>
+            <input value="GUATEMALA" />
+          </label>
+        </div>
+
+        <fieldset class="location">
+          <legend>Ubicación <span class="hint">— código y nombre; se llenan solos al capturar</span></legend>
+          <div class="loc-row">
+            <span class="loc-label">Departamento</span>
+            <input class="mono code" value="06" />
+            <input value="SAN SALVADOR" />
+          </div>
+          <div class="loc-row">
+            <span class="loc-label">Municipio</span>
+            <input class="mono code" value="23" />
+            <input value="SAN SALVADOR CENTRO" />
+          </div>
+          <div class="loc-row">
+            <span class="loc-label">Distrito</span>
+            <input class="mono code" value="14" />
+            <input value="SAN SALVADOR" />
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!-- Generador de la captura 01-lista.png (1280x800) para la Chrome Web Store.
+     Renderizar con:
+       chrome --headless --window-size=1280,800 --screenshot=01-lista.png gen-01-lista.html -->
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="../../receptor-extension/popup.css" />
+  <style>
+    html, body { width: 1280px; height: 800px; overflow: hidden; }
+    body {
+      display: flex; align-items: center; justify-content: center; gap: 90px;
+      background: linear-gradient(135deg, #e9eefb 0%, #fafaf7 55%, #f7f6ef 100%);
+    }
+    .pitch { width: 340px; }
+    .pitch img { width: 96px; height: 96px; margin-bottom: 28px; }
+    .pitch h1 { font-size: 40px; letter-spacing: -0.02em; margin-bottom: 14px; }
+    .pitch p { font-size: 17px; line-height: 1.55; color: #3c4557; }
+    .popup {
+      width: 380px; min-height: 560px;
+      background: var(--paper); border-radius: 14px; overflow: hidden;
+      box-shadow: 0 24px 60px rgba(22, 35, 59, 0.18);
+    }
+    .popup header { border-radius: 0; }
+  </style>
+</head>
+<body>
+  <div class="pitch">
+    <img src="../../receptor-extension/icons/icon128.png" alt="" />
+    <h1>Facturito</h1>
+    <p>Guarda tus receptores localmente y llena los formularios de DTE de factura.gob.sv con un clic.</p>
+  </div>
+
+  <div class="popup">
+    <header>
+      <div>
+        <h1><img src="../../receptor-extension/icons/icon32.png" alt="" class="logo" /> Facturito</h1>
+      </div>
+      <div class="header-actions">
+        <button class="primary">⬇ Capturar</button>
+      </div>
+    </header>
+
+    <ul id="list">
+      <li>
+        <div class="item-main">
+          <div class="item-alias">Cliente ACME</div>
+          <div class="item-sub"><span class="mono-chip">NIT 06141234567890</span> ACME S.A. d…</div>
+          <div class="item-loc">Capturado en Crédito Fiscal</div>
+        </div>
+        <button class="item-btn">✎</button>
+        <button class="item-btn danger">✕</button>
+      </li>
+      <li>
+        <div class="item-main">
+          <div class="item-alias">Exportadora Maya</div>
+          <div class="item-sub"><span class="mono-chip">NIT 02101987654321</span> Maya Corp</div>
+          <div class="item-loc">Capturado en Exportación</div>
+        </div>
+        <button class="item-btn">✎</button>
+        <button class="item-btn danger">✕</button>
+      </li>
+      <li>
+        <div class="item-main">
+          <div class="item-alias">Receptor viejo</div>
+          <div class="item-sub"><span class="mono-chip">NIT 01234567890123</span> Sin origen</div>
+        </div>
+        <button class="item-btn">✎</button>
+        <button class="item-btn danger">✕</button>
+      </li>
+    </ul>
+
+    <footer>
+      <button class="link">Exportar</button>
+      <span class="dot">·</span>
+      <button class="link">Importar</button>
+    </footer>
+  </div>
+</body>
+</html>
