@@ -26,12 +26,12 @@ Para versiones siguientes: subir un ZIP nuevo con `"version"` incrementada en
 **Resumen (short description)**:
 
 > Guarda receptores localmente y llena la sección Receptor de los DTE de
-> factura.gob.sv con un clic.
+> factura.gob.sv con un click.
 
 **Descripción detallada**:
 
 > Facturito guarda los datos de tus clientes (receptores) localmente en tu
-> computadora y llena con un clic la sección Receptor de los formularios de
+> computadora y llena con un click la sección Receptor de los formularios de
 > DTE del portal de facturación electrónica de El Salvador (factura.gob.sv).
 >
 > Soporta los 4 tipos de documento:
@@ -42,7 +42,7 @@ Para versiones siguientes: subir un ZIP nuevo con `"version"` incrementada en
 >
 > Cómo funciona:
 > 1. Llena la sección Receptor una vez a mano y pulsa "Capturar".
-> 2. La próxima vez, abre el popup y haz clic en el receptor: Facturito
+> 2. La próxima vez, abre el popup y haz click en el receptor: Facturito
 >    detecta qué formulario está abierto, llena los campos que apliquen,
 >    selecciona departamento → municipio → distrito en cascada y busca la
 >    actividad económica o el país automáticamente.

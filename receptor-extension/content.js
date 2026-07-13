@@ -148,7 +148,7 @@
   }
 
   // ng-select con búsqueda: escribimos el texto, esperamos el panel de
-  // opciones y hacemos clic en la mejor coincidencia.
+  // opciones y hacemos click en la mejor coincidencia.
   async function setNgSelect(root, sel, text, timeoutMs = 6000) {
     const ngSelect = root.querySelector(sel);
     const input = ngSelect?.querySelector('input[role="combobox"]');

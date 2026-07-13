@@ -1,7 +1,7 @@
 # Facturito 🤖
 
 Extensión de Chrome que guarda receptores **localmente en tu computadora**
-(`chrome.storage.local`, nada sale de tu máquina) y llena con un clic la
+(`chrome.storage.local`, nada sale de tu máquina) y llena con un click la
 sección *Receptor* de los formularios de DTE de factura.gob.sv.
 
 Soporta los 4 tipos de documento:
@@ -20,7 +20,7 @@ datos). El badge en cada tarjeta (CCF/FAC/EXP/FSE) indica dónde se capturó.
 
 1. Abre `chrome://extensions` en Chrome.
 2. Activa **Modo de desarrollador** (esquina superior derecha).
-3. Clic en **Cargar descomprimida** y selecciona esta carpeta
+3. click en **Cargar descomprimida** y selecciona esta carpeta
    (`receptor-extension`).
 
 ## Uso
@@ -29,15 +29,15 @@ datos). El badge en cada tarjeta (CCF/FAC/EXP/FSE) indica dónde se capturó.
 
 1. Abre el formulario de DTE y llena la sección *Receptor* una vez a mano
    (incluyendo departamento/municipio/distrito y actividad económica).
-2. Clic en el icono de la extensión → **⬇ Capturar**.
+2. click en el icono de la extensión → **⬇ Capturar**.
 3. Ponle un alias y guarda.
 
 Después de capturado puedes ajustar cualquier campo con el botón ✎.
 
 ### Llenar el formulario
 
-Con cualquier formulario de DTE abierto, clic en el icono de la extensión y
-luego clic sobre el receptor. La extensión detecta qué tipo de formulario es,
+Con cualquier formulario de DTE abierto, click en el icono de la extensión y
+luego click sobre el receptor. La extensión detecta qué tipo de formulario es,
 llena los campos que apliquen, selecciona departamento → municipio → distrito
 en cascada (espera a que carguen las opciones) y busca la actividad económica
 o el país en el buscador del sitio. En Factura, elige primero el tipo de

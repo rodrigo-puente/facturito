@@ -86,7 +86,7 @@ function render() {
 
     const main = document.createElement('div');
     main.className = 'item-main';
-    main.title = 'Clic para llenar el formulario';
+    main.title = 'click para llenar el formulario';
 
     const alias = document.createElement('div');
     alias.className = 'item-alias';

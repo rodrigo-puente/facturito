@@ -3,7 +3,7 @@
 Extensión de Chrome para el portal de facturación electrónica de El Salvador
 ([factura.gob.sv](https://factura.gob.sv)). Guarda los datos de tus receptores
 **localmente en tu computadora** y llena la sección *Receptor* de cualquier
-DTE con un clic.
+DTE con un click.
 
 Soporta los 4 tipos de documento: Comprobante de Crédito Fiscal, Factura,
 Factura de Exportación y Factura de Sujeto Excluido.
