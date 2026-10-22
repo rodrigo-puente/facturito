@@ -39,3 +39,7 @@ ser posible, reemplaza el HTML de referencia con una copia nueva — solo el
 
 La extensión no envía nada a ningún servidor: los receptores viven en
 `chrome.storage.local` y solo interactúa con las páginas de factura.gob.sv.
+
+## Licencia
+
+[MIT](LICENSE) © 2026 Rodrigo Puente
