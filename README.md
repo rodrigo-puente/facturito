@@ -10,8 +10,8 @@ Factura de Exportación y Factura de Sujeto Excluido.
 
 ## Instalación
 
-- **Sitio web**: _(URL de Railway pendiente de publicación)_
-- **Chrome Web Store**: _(enlace pendiente de publicación)_
+- **Sitio web**: <https://facturito.rodrigopuente.com>
+- **Chrome Web Store**: <https://chromewebstore.google.com/detail/facturito/mcebmlmcobinohafakgniebjbhnndako>
 - **Manual**: descarga el repo y carga `receptor-extension/` como extensión
   descomprimida — instrucciones en su [README](receptor-extension/README.md).
 
